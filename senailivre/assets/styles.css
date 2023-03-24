@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+.header{ 
+    background-color: #fff159;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*para rolar o site todo até chegar na página*/
+html {
+    scroll-behavior: smooth;
+}
+
+.header img{
+    width: 100px;
+}
+
+.headercima{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
+.headerbaixo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    align-items: center;
+
+}
+
+   
+.pesquisa input[type="text"] {
+    padding-left: 30px; /* deixe um espaço para o ícone */
+    background-image: url(img/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 50%; /* posição do ícone */
+    background-size: 20px 20px; /* tamanho do ícone */
+    border: none; /* remova a borda padrão do input */
+    border-radius: 15px; /* adicione bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* adicione uma sombra */
+    width: 300px; /* defina a largura do input */
+    height: 40px; /* defina a altura do input */
+    font-size: 13px; /* defina o tamanho da fonte */
+    color: #333; /* defina a cor do texto */
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+    gap: 30px;
+}
+ 
+.titulo{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.fritadeira , .camera, .laptop , .cadeira, .meias{
+    border: 1.8px solid black;
+    border-radius: 20px 0px 20px 20px;
+    padding: 10px;
+    
+}
+
+.verclaro{
+    color: #4DB68A
+}
+
+.verescuro{
+    color: #098f4e;
+    font-weight: bold;
+}
+
+.cinza{
+    color: #383838;
+}
+
+.descontos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    text-align: center;
+}
+
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 0.2px;
+}
+
+.ofertas img{
+    width: 200px;
+}
+.mais{
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer{
+    background-color: #fff159;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 30px;
+    margin-top: 20px;
+    background-image: url(../SenaiLivre/img/rodape.png);
+    background-repeat: no-repeat;
+    background-position: -20vh;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #fff159;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .30s ease;
+    
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: rgb(231, 67, 67);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(245, 6, 6) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(245, 6, 6) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 400ms;
+   }
+
+   /*login*/
+
+.headerlogin{
+    background-color: #fff159;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+   } 
+.headerlogin img{
+    width: 100px;
+}
+
+main #form #form-texto{
+    text-align: center;
+    padding: 60px;
+}
+main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+main #form #form-formulario form input{
+    /* para o texto ficar por cima do formulário */
+    display: block;
+    padding: 8px;
+    border: none;
+
+    /* para tirar a borda quando clica */
+    outline: none;
+
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    /* para mudar o comprimento do formulário */
+    width: 300px;
+}
+
+.hamblogin{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.headerbaixo :hover,
+.descontos :hover,
+.flex :hover,
+.flex2 :hover{
+ padding: 2px;
+
+}
+
